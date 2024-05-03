@@ -1,7 +1,7 @@
 # Sales Analysis - AtliQ Hardware
 ## Problem Statement
 
-The sales director of Atliq Hardware is facing challenges in tracking sales in a dynamically growing market. The sales director does not have a direct access to track down the performance of the business. Atliq has regional managers in north, south and central regions to monitor business in their respective region. These regional managers responsibility includes communicating the performance of the business to the sales director.
+The Sales director of Atliq Hardware is facing challenges in tracking sales in a dynamically growing market. The sales director does not have a direct access to track down the performance of the business. Atliq has regional managers in north, south and central regions to monitor business in their respective region. These regional managers responsibility includes communicating the performance of the business to the sales director.
 
 The sales directors receives updates on monthly basis which is incomplete and inadeqaute in terms of numbers. The Sales director is not able to take data-driven decisions as the sales in most regions are declining and has become a huge reason for concern.
 
