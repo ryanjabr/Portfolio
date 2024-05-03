@@ -3,26 +3,27 @@
 
 The sales director of Atliq Hardware is facing challenges in tracking sales in a dynamically growing market. The sales director does not have a direct access to track down the performance of the business. Atliq has regional managers in north, south and central regions to monitor business in their respective region. These regional managers responsibility includes communicating the performance of the business to the sales director.
 
-So, the sales directors receives updates on monthly basis which he finds incomplete, inadeqaute, limited, and insubstantial in terms of numbers. This is concerning for the sales director as the sales in most regions are declining and he is not able to take data driven decision.
+The sales directors receives updates on monthly basis which is incomplete and inadeqaute in terms of numbers. The Sales director is not able to take data-driven decisions as the sales in most regions are declining and has become a huge reason for concern.
 
 Following are the specific problems that the sales director is facing:
 
-He is unable to track sales in real time. He only receives sales data on a monthly basis, which is too slow to make timely decisions.
-He does not have a clear understanding of how his sales are performing in different regions or product categories.
-He is unable to identify trends in his sales data. This makes it difficult for him to predict future sales and make informed decisions about marketing and pricing.
+- He is unable to track sales in real time. He only receives sales data on a monthly basis, which is too slow to make timely decisions.
+- He does not have a clear understanding of how his sales are performing in different regions or in different product categories.
+- He is unable to identify trends in his sales data. This makes it difficult for him to predict future sales and make informed decisions about marketing and pricing.
 
 ## Solution
 
-The sales director hopes that by building a Power BI dashboard, he will be able to address these problems and improve sales for Atliq Hardware. The dashboard will provide him with real-time sales data, insights into sales performance by region and product category, and trends in his sales data. This information will help him make better decisions about marketing, pricing, and product development.
+The sales director hopes that by building a Power BI dashboard, he will be able to address these problems and improve sales for Atliq Hardware. The dashboard will provide him with real-time sales data, insights into sales performance by region and product category, and trends in his sales data. This information will help make better decisions about marketing, pricing, and product development.
+
 The sales director hopes to view the following specific things in the dashboard which will help him take data-driven decisions:
 
-Real-time sales data:
+Real-time sales data :
 This will allow him to track sales performance and make timely decisions about marketing, pricing, and product development.
 
-Sales performance by region and product category:
+Sales performance by region and product category :
 This will give him a clear understanding of how his sales are performing in different areas and for different products.
 
-Trends in sales data:
+Trends in sales data :
 This will help him predict future sales and make informed decisions about marketing and pricing.
 
 ## Data Gathering and Analysis
@@ -54,9 +55,12 @@ This will help him predict future sales and make informed decisions about market
 1) Import the date from MySQL database to Power BI by establishing connection between the two.
 
 2) Transforming the data in Power Query Editor:
-- Filtered the Indian cities only by excluding the business from New York and Paris. Because as observed during data analysis no records were found for transactions done outside India.
 
-- Created a new column for sales amount which has values INR only named norm_sales_amt
+- Removed Garbage entries 0 and -1 from sales_amount coloumn in sales_transactions table
+  
+- Filtered the data to Indian cities only by excluding the businesses from New York and Paris since no records were found for transactions done outside India.
+
+- Created a new column 'norm_sales_amt' for sales amount which has values only in 'INR'. For sales_amount entries in currency 'USD' , the sales_amount will be multiplied with 76 as per the currency conversion.
 
 ### Formula to create norm_sales_amt column
 
