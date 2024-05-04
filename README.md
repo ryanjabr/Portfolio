@@ -60,12 +60,12 @@ This will help him predict future sales and make informed decisions about market
   
 - Filtered the data to Indian cities only by excluding the businesses from New York and Paris since no records were found for transactions done outside India.
 
-- Created a new column 'norm_sales_amt' for sales amount which has values only in 'INR'. For sales_amount entries in currency 'USD' , the sales_amount will be multiplied with 76 as per the currency conversion.
+- Created a new column 'norm_sales_amt' for sales amount which has values only in 'INR'. For sales_amount entries in currency 'USD' , the sales_amount will be multiplied with 75 as per the currency conversion.
 
 ### Formula to create norm_sales_amt column
 
 ``` dax
-= Table.AddColumn(#"Filtered Rows", "norm_amount", each if [currency] = "USD" or [currency] ="USD#(cr)" then [sales_amount]*75 else [sales_amount], type any)
+= Table.AddColumn(#"Filtered Rows", "norm_amount", each if [currency] = "USD" or [currency] ="USD#(cr)" then [sales_amount]*75 else [sales_amount])
 ```
   
 3) The relationship with the 4 child tables which are customers, markets, products, date was established with the fact table transactions which holds the references (foreign key) from the primary keys of child tables. The relationship being one to many.
