@@ -138,6 +138,8 @@ CALCULATE([Revenue],SAMEPERIODLASTYEAR('sales date'[date]))
 - Gather feedback from customers to identify areas for improvement.
 
 - Examining cost of goods sold at various levels of productions
+
+Dashboard created (pdf) - [https://github.com/ryanjabr/Sales-Analysis---AtliQ-Hardware/blob/main/Sales_Analysis%20Project%20(1).pdf]
    
 
  
