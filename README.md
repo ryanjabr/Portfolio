@@ -113,6 +113,8 @@ CALCULATE([Revenue],SAMEPERIODLASTYEAR('sales date'[date]))
 
 ## Dashboard
 
+![Sales_Analysis Project (1)-1](https://github.com/ryanjabr/Sales-Analysis---AtliQ-Hardware/assets/168835863/56732c80-b964-4920-9fb5-c9005a628b0b)
+
 
 ## Insights from the final report
 
