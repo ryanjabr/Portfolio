@@ -115,6 +115,10 @@ CALCULATE([Revenue],SAMEPERIODLASTYEAR('sales date'[date]))
 
 ![Sales_Analysis Project (1)-1](https://github.com/ryanjabr/Sales-Analysis---AtliQ-Hardware/assets/168835863/56732c80-b964-4920-9fb5-c9005a628b0b)
 
+![Sales_Analysis Project (2)-1](https://github.com/ryanjabr/Sales-Analysis---AtliQ-Hardware/assets/168835863/a5914d4d-98ce-47ae-aed6-7d6b541f4ef8)
+
+![Sales_Analysis Project (3)-1](https://github.com/ryanjabr/Sales-Analysis---AtliQ-Hardware/assets/168835863/e6520d13-71c9-4193-86a0-ba6b8f3553d6)
+
 
 ## Insights from the final report
 
